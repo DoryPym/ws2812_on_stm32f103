@@ -28,12 +28,12 @@ int main(void)
    	while(1)
 	{
 		while (!ws2812b_IsReady()); 
-		if(dir > 250) dir =0;
+		if(dir > 200) dir =0;
 		for(i=0;i<NUM_LEDS;i++)
 		{
-			leds[i].r = 100;
+			leds[i].r = 200;
 			leds[i].g = dir;
-			leds[i].b = 200;
+			leds[i].b = 100;
 		}
 // 		delay_ms(1);	 
 //		if(dir)led0pwmval++;
